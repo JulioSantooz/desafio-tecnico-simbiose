@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--reset css-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!--style css-->
+    <link rel="stylesheet" href="./css/config.css">
+    <link rel="stylesheet" href="./css/create_update.css">
+    <!--link bootstrap(css)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--cdn axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Simbiose -Fazer pedido</title>
+</head>
+<body>
+
+    <main class="container">
+
+        <div class="titulo">
+            <h1>Fazer pedido</h1>
+        </div>
+
+        <article class="container-form">
+            <form action="" onsubmit="return false;">
+                <div class="group-inputs">
+                    <label for="">Insira o nome do item:</label>
+                    <input type="text" id="nomeItem" name="">
+                </div>
+                <div class="group-inputs">
+                    <label for="">Valor do pedido:</label>
+                    <input type="text" id="valorItem" name="">
+                </div>
+                <div class="group-butons">
+                    <button id="btnCancelar" class="button-cancel">Cancelar</button>
+                    <button id="btnConfirmar" type="submit" onclick="getResults()"  class="button-confirm">Confirmar</button>
+                </div>
+            </form>
+        </article>
+
+        <div class="titulo">
+            <h1>Lista de pedidos</h1>
+        </div>
+    
+        <button id="apagaTudo" class="button-cancel" onclick="aparTudo()">Apagar tudo</button> 
+        
+        <div class="table-responsive mt-5">
+            <table class="table table-striped table-dark " style="color: black">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Preço</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                  
+                </tbody>
+            </table>
+        </div>
+
+        <footer class="footer">
+            <p>Desenvolvido por <a href="index.html">Julio Santos</a>, com apoio <a href="">Simbios ♥</a></p>
+        </footer>
+
+        
+    </main>
+
+
+    <!--link do js-->
+    <script src="./js/main.js"></script>
+    
+    <!--link bootstrap(js)-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

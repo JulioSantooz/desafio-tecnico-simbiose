@@ -1,0 +1,97 @@
+/*Inicio da estilizacao do titulo*/
+.titulo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.titulo > p {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    color: var(--cor-subtitulo);
+}
+
+.titulo > p > a {
+    color: var(--cor-terciaria-icone);
+}
+
+.titulo > h1 {
+    margin-top: 50px;
+    color: var(--cor-titulo);
+}
+/*Inicio da estilizacao do titulo*/
+
+/*Inicio da estilizacao do formulario*/
+.container-form {
+    display: flex;
+    justify-content: center;
+}
+
+.container-form > form {
+    padding-top: 30px;
+    width: 700px;
+}
+
+.group-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    color: var(--cor-fundo-icone);
+}
+
+.group-inputs > input {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding: 10px 0 10px 12px;
+}
+
+.group-butons {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.button-cancel {
+    border: 1px solid gray;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: ease 1s;
+}
+
+.button-confirm {
+    margin-left: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 8px 15px;
+    font-weight: 500;
+    transition: ease 1s;
+}
+
+.button-cancel:hover {
+    background-color: #ef4565;
+    color: #d8eefe;
+    border: 1px solid #d8eefe;
+    border-radius: 0;
+    transition: ease 1s;
+}
+
+.button-confirm:hover {
+    background-color: #ef4565;
+    color: #d8eefe;
+    border: 1px solid #d8eefe;
+    border-radius: 0;
+    transition: ease 1s;
+}
+/*Fim da estilizacao do formulario*/
+
+/*Inicio da estilizacao do table*/
+.table-itens{
+    display: flex;
+    justify-content: center;
+}
+/*Fim da estilizacao do table*/

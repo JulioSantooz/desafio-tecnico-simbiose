@@ -1,0 +1,59 @@
+/*inicio do import da fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*fim do import da fonte*/
+
+/*inicio do reset basico*/
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-fundo);
+}
+body {
+    background-color: var(--cor-fundo) !important;   
+}
+/*fim do reset basico*/
+
+/*inicio das variaveis de ambiente*/
+:root {
+    /*inicio das cores dos elementos*/
+    --cor-fundo: #d8eefe;
+    --cor-titulo: #094067;
+    --cor-subtitulo: #5f6c7b;
+    /*fim das cores dos elementos*/
+    /*inicio das cores dos incones*/
+    --cor-fundo-icone: #094067;
+    --cor-principal-icone: #fffffe;
+    --cor-destaque-icone: #3da9fc;
+    --cor-secundaria-icone: #90b4ce;
+    --cor-terciaria-icone: #ef4565;
+}
+/*fim das variaveis de ambiente*/
+
+/*inicio do footer*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    color: var(--cor-subtitulo);
+}
+
+.footer > p > a {
+    color: var(--cor-terciaria-icone);
+}
+/*fim do footer*/
+
+
+/*inicio da resposividade mobile*/
+@media(max-width: 600px) {
+
+    /*inicio da resposividade mobile para o footer*/
+    .footer {
+        font-size: 12px;
+    }
+    /*fim da resposividade mobile para o footer*/
+
+}
+/*fim da resposividade mobile*/
+
